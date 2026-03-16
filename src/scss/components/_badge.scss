@@ -1,0 +1,16 @@
+@use "../utils/mixin";
+@use "../utils/variables";
+
+.badge {
+    @include mixin.badge-base();
+    color: variables.$badge-cl;
+}
+.badge-completed {
+    background-color: variables.$completed;
+}
+.badge-ended {
+    background-color: variables.$ended;
+}
+.badge-active {
+    background-color: variables.$active;
+}
