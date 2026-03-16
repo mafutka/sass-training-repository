@@ -1,16 +1,15 @@
-@use "../utils/mixin";
-@use "../utils/variables";
+@use "../utils" as fwrd;
 
 .badge {
-    @include mixin.badge-base();
-    color: variables.$badge-cl;
+    @include fwrd.badge-base();
+    color: fwrd.$badge-cl;
 }
 .badge-completed {
-    background-color: variables.$completed;
+    background-color: fwrd.$completed;
 }
 .badge-ended {
-    background-color: variables.$ended;
+    background-color: fwrd.$ended;
 }
 .badge-active {
-    background-color: variables.$active;
+    background-color: fwrd.$active;
 }
